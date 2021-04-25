@@ -16,10 +16,14 @@
             <div class="container">
                 {% if user.is_authenticated %}
                 <a href="{% url 'post_new' %}"  class="top-menu">
-                    <h1>+Add a Post</h1>
+                    <h2>+Add a Post</h2>
+
                 </a>
+                <a href="{% url 'post_draft_list' %}" class="top-menu"><h2>Drafts</h2></a>
+
             {% endif %}
-            <h1><a href="/">Janina's Blog</a></h1>
+            <h2><a href="/">Janina's Blog</a></h2>
+
         </div>
         </header>
 <main class="container">
